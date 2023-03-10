@@ -36,9 +36,6 @@ html {
 .space-around-content {
   justify-content: space-around;
 }
-.margin-auto-center {
-  margin: auto;
-}
 
 body {
   font-family: 'Poppins';
@@ -79,10 +76,15 @@ nav {
   margin-right: 3.2rem;
 }
 
+.display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .navbar-links {
   display: flex;
-  list-style: none;
   flex-wrap: wrap;
+  list-style: none;
   justify-content: space-between;
 }
 
