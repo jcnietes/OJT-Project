@@ -145,13 +145,18 @@ input[type="text"]::placeholder {
   display: flex;
   flex-wrap: wrap;
   background-color: black;
-  max-width: 75.5%;
+  width: 768px;
+  max-width: 100%;
+  min-width: 320px;
   margin: auto;
 }
 
 .submain-button-child{
   display: flex;
-  width: 22.3rem;
+  flex-grow: 1;
+  width: 240px;
+  min-width: 240px;
+  max-width: 100%;
   background-color: white;
   padding: 1% 1%;
   border: none;
@@ -223,9 +228,12 @@ input[type="text"]::placeholder {
 
 .button-articles{
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
-  max-width: 34.2rem;
-  width: 34.5rem;
+  width: 368px;
+  max-width: 100%;
+  min-width: 368px;
+  /* width: 23rem; */
   background-color: white;
   padding: 1% 1%;
   border: none;
