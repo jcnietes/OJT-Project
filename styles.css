@@ -20,6 +20,26 @@ html {
   padding: 0;
 }
 
+.display-flex-only {
+  display: flex;
+}
+
+.display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between-content {
+  justify-content: space-between;
+}
+
+.space-around-content {
+  justify-content: space-around;
+}
+.margin-auto-center {
+  margin: auto;
+}
+
 body {
   font-family: 'Poppins';
   background-color: #FAF9F8;
@@ -203,19 +223,12 @@ input[type="text"]::placeholder {
   display: flex;
   justify-content: space-between;
   max-width: 34.2rem;
-  height: 100%;
-  background-color: red;
-  padding: 1% 1%;
-  border: none;
-  margin: 1% 1%;
-  box-shadow: 0px 0px 6px rgb(0 0 0 / 2%), 0px 2px 4px rgb(0 0 0 / 8%);
-
-  display: flex;
-  width: 22.3rem;
+  width: 34.5rem;
   background-color: white;
   padding: 1% 1%;
   border: none;
   margin: 1% 1%;
+  box-shadow: 0px 0px 6px rgb(0 0 0 / 2%), 0px 2px 4px rgb(0 0 0 / 8%)
 }
 
 /* .button-articles h3 {
