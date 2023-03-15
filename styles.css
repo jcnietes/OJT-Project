@@ -50,6 +50,8 @@ body {
 } */
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: pink;
     min-width: 320px;
     max-width: 100%;
@@ -60,15 +62,14 @@ header {
 nav {
   background-color: red;
   display: flex;
-  justify-content: space-between;
-  margin: 0% 8%;
+  justify-content: flex-start;
   align-items: center;
   height: 10vh;
-  flex-wrap: wrap;
 }
 
 nav img {
-  max-width: 320px;
+  min-width: 120px;
+  max-width: 500px;
 }
 
 nav ul li {
@@ -88,8 +89,9 @@ ul {
 label #btn,
 label #cancel{
   color: white;
-  position: absolute;
-  
+  float: right;
+  align-items: center;
+  line-height: 6.5vh;
 }
 
 #check {
@@ -387,7 +389,7 @@ input[type="text"]::placeholder {
 }
 /* FOOTER END */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .button-articles {
     flex-grow: 1;
   }
@@ -395,16 +397,24 @@ input[type="text"]::placeholder {
     width: 50vw;
   }
   a {
-    display:none
+    display:;
   }
-  #btn, #cancel {
-    display: none;
+  #btn, #cancel{
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    background-color: blue;
+    width: 250px;
+    justify-content: flex-end;
   }
 }
 
 @media only screen and (max-width: 560px) {
   nav {
     margin: 0% 0%;
+    margin: auto;
   }
   .navbar-logo{
     width: auto;
@@ -418,6 +428,13 @@ input[type="text"]::placeholder {
 @media only screen and (max-width: 363px){
   .icon-article-text img, h1{
     font-size: 20px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  nav img {
   }
 }
 
