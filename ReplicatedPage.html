@@ -3,7 +3,12 @@
 
 <head>
   <title>HelpDesk</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="upper.css">
+  <link rel="stylesheet" href="middle.css">
+  <link rel="stylesheet" href="lowermid.css">
+  <link rel="stylesheet" href="footer.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, intitial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,9 +50,9 @@
   </div>
 
   <div class="main-container">
-    <!-- SECTION 1 START-->
+    <!-- UPPER SECTION-->
     <section>
-      <div class="firstsec-text-center-container">
+      <div class="upper-text-center-container">
         <h1>
           Looking for help?
         </h1>
@@ -58,12 +63,12 @@
         </p>
       </div>
       <form>
-        <div class="center-search-bar">
-          <input type="text" class="input-search-bar" placeholder="Search...">
+        <div>
+          <input type="text" class="upper-input-search-bar" placeholder="Search...">
         </div>
       </form>
     </section>
-    <!-- SECTION 2 START-->
+    <!-- MIDDLE SECTION-->
     <section>
       <div class="middle-container">
         <h1>Guid by Features</h1>
@@ -154,8 +159,7 @@
         </div>
       </div>
     </section>
-
-    <!-- SECTION 3 START -->
+    <!-- LOWER MIDDLE SECTION -->
     <section>
       <div class="lower-middle-main-container">
         <div class="lower-middle-article-header">
@@ -175,79 +179,247 @@
 
         <div class="lower-middle-sub-container">
           <div class="lower-middle-icon-article-text">
+            <img src="icons/featured articles.png" alt="img" class="lower-middle-icon-img">
+            <h1 class="h1-align">Featured Articles</h1>
+          </div>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              How do I add a task in the Clipboard?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              Timecard Editor Management
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="lower-middle-main-container">
+        <div class="lower-middle-sub-container">
+          <div class="lower-middle-icon-article-text">
             <img src="icons/recent articles.png" alt="img" class="lower-middle-icon-img">
             <h1 class="h1-align">Recent Articles</h1>
           </div>
 
-          <div class="lower-middle-sub-container">
-            <button type="button" class="lower-middle-button-articles">
-              <h3>
-                How do I add a task in the Clipboard?
-              </h3>
-              <div class="lower-middle-button-arrow-icon">
-                <span class="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
-            </button>
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              How do I add a task in the Clipboard?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
 
-            <button type="button" class="lower-middle-button-articles">
-              <h3>
-                Timecard Editor Management
-              </h3>
-              <div class="lower-middle-button-arrow-icon">
-                <span class="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
-            </button>
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              Timecard Editor Management
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
 
-            <button type="button" class="lower-middle-button-articles">
-              <h3>
-                Timecard Report Management
-              </h3>
-              <div class="lower-middle-button-arrow-icon">
-                <span class="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
-            </button>
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              Timecard Report Management
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
 
-            <button type="button" class="lower-middle-button-articles">
-              <h3>
-                PTO Management in coAmplifi
-              </h3>
-              <div class="lower-middle-button-arrow-icon">
-                <span class="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
-            </button>
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              PTO Management in coAmplifi
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
 
-            <button type="button" class="lower-middle-button-articles">
-              <h3>
-                What roles are available for coamplifi users?
-              </h3>
-              <div class="lower-middle-button-arrow-icon">
-                <span class="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
-            </button>
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              What roles are available for coamplifi users?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
 
-            <button type="button" class="lower-middle-button-articles">
-              <h3>
-                How to setup as a new tenant?
-              </h3>
-              <div class="lower-middle-button-arrow-icon">
-                <span class="material-symbols-outlined">
-                  chevron_right
-                </span>
-              </div>
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              How to setup as a new tenant?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="lower-middle-main-container">
+        <div class="lower-middle-sub-container">
+          <div class="lower-middle-icon-article-text">
+            <img src="icons/popular articles.png" alt="img" class="lower-middle-icon-img">
+            <h1 class="h1-align">Popular Articles</h1>
+          </div>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              How do I add a task in the Clipboard?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              Timecard Report Management
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              PTO Management in coAmplifi
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              What roles are available for coamplifi users?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              How to setup as a new tenant?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="lower-middle-main-container">
+        <div class="lower-middle-sub-container">
+          <div class="lower-middle-icon-article-text">
+            <img src="icons/frequently asked questions.png" alt="img" class="lower-middle-icon-img">
+            <h1 class="h1-align">Frequently Asked Questions</h1>
+          </div>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              How do I add a task in the Clipboard?
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              Timecard Editor Management
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="lower-middle-button-articles">
+            <h3>
+              Timecard Report Management
+            </h3>
+            <div class="lower-middle-button-arrow-icon">
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <section>
+      <div class="footer-main-container">
+        <div class="footer-submain-container">
+          <div class="footer-sub-container">
+            <h1>
+              Can't find the thing you need?
+            </h1>
+            <h3>
+              Open a ticket and we will get back to you as soon as we can.
+            </h3>
+            <h4>
+              Chat support becomes available Mon-Fri |9AM-5PM
+            </h4>
+          </div>
+          <div class="footer-textbutton">
+            <button type="button">
+              <span class="material-symbols-outlined">
+                local_activity
+              </span>
+              <h4>
+                Open Ticket
+              </h4>
             </button>
           </div>
         </div>
-
       </div>
     </section>
   </div>

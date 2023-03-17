@@ -1,0 +1,38 @@
+/* NAVBAR */
+.navbar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.navbar span {
+    font-size: 20px;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+
+.navbar .material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.navbar-item:hover span {
+    color: var(--orange-color);
+}
+
+.navbar img {
+    width: 230px;
+}
