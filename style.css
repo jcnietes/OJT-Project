@@ -23,7 +23,6 @@ body {
 }
 
 
-
 /* UTILITIES */
 .flex {
   display: flex;
@@ -65,24 +64,24 @@ body {
   color: var(--orange-color);
 }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width: 1536px) {
+.hamburger {
 
-  #btn,
-  #check,
-  #cancel {
-    display: none;
-  }
+  float: right;
+  height: 24px;
+  cursor: pointer;
 }
 
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: red;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1536px) {}
+
 @media only screen and (max-width: 969px) {
-
-  #btn,
-  #check,
-  #cancel {
-    display: none;
-  }
-
 
   .middle-sub-container .middle-sub-button-child {
     flex-grow: 1;
@@ -109,41 +108,58 @@ body {
     cursor: pointer;
   }
 
-  nav {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 500px;
-    /* background-color: pink; */
-    transition: 0.2s;
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
   }
 
-  nav ul {
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navMenu {
+    position: absolute;
+    top: -200%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 30px;
     transition: 0.5s;
   }
 
-  nav a {
+  .navMenu {}
+
+  .navMenu.active {
+    top: 20px;
+  }
+
+  .navMenu a {
     font-size: 15px;
   }
 
-  nav li {
+  .navMenu li {
     padding: 5px;
-  }
-
-  nav.active ul {
-    /* background-color: red; */
+    margin-top: 10px;
+    border: solid;
+    border-color: var(--greyish-color);
+    background-color: var(--greyish-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);
   }
 }
 
 @media only screen and (max-width: 640px) {
+
   nav {
     margin: 0% 0%;
     margin: auto;
@@ -162,10 +178,14 @@ body {
 
   @media only screen and (max-width: 363px) {
 
+
     .icon-article-text img,
     h1 {
       font-size: 20px;
     }
 
+    .upper-text-center-container h1 {
+      font-size: 10px;
+    }
   }
 }

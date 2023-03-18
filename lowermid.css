@@ -79,7 +79,9 @@
     margin: 0;
 }
 
-.lower-middle-sub-container hr {
+.lower-middle-main-container hr {
+    background-color: lightgray;
+    height: 0.5px;
     margin: 0;
 }
 
@@ -90,10 +92,6 @@
 
 .lower-middle-icon-article-text h1 {
     padding-left: 1%;
-}
-
-.lower-middle-container hr {
-    margin: 0;
 }
 
 .lower-middle-button-articles h3 {

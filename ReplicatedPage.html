@@ -28,13 +28,11 @@
     <div class="navbar-container flex">
       <img src="/icons/logo.png">
       <div class="hamburger">
-        <button onclick="myFunction()">
-          <span class="material-symbols-outlined">
-            menu
-          </span>
-        </button>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <nav>
+      <nav class="navMenu">
         <ul>
           <li>
             <a href="#">
@@ -48,7 +46,6 @@
       </nav>
     </div>
   </div>
-
   <div class="main-container">
     <!-- UPPER SECTION-->
     <section>
@@ -166,7 +163,6 @@
           <h1>
             Helpful Articles
           </h1>
-          <hr>
           <button type="button" class="lower-middle-view-all-article-button">
             <h3>
               View All Article
@@ -176,7 +172,7 @@
             </span>
           </button>
         </div>
-
+        <hr>
         <div class="lower-middle-sub-container">
           <div class="lower-middle-icon-article-text">
             <img src="icons/featured articles.png" alt="img" class="lower-middle-icon-img">
@@ -395,7 +391,7 @@
       </div>
     </section>
     <!-- FOOTER -->
-    <section>
+    <section class="footer-container">
       <div class="footer-main-container">
         <div class="footer-submain-container">
           <div class="footer-sub-container">
@@ -422,6 +418,17 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger")
+      const navMenu = document.querySelector(".navMenu")
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }) 
+    </script>
+
   </div>
 </body>
 

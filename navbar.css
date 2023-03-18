@@ -5,7 +5,7 @@
     padding: 10px 10px;
 }
 
-.navbar ul {
+.navMenu ul {
     display: flex;
     list-style: none;
 }
@@ -20,8 +20,19 @@
     font-size: 20px;
 }
 
-.navbar .hamburger {
+.hamburger {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--orange-color);
+    margin: 3px;
 }
 
 .navbar .material-symbols-outlined {

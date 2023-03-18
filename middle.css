@@ -13,6 +13,8 @@
 
 .middle-container hr {
     margin: 0;
+    height: 0.5px;
+    background-color: lightgray;
 }
 
 .middle-sub-container h1 {
