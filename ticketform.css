@@ -1,0 +1,103 @@
+.ticketform-maincontainer {
+    margin: auto;
+    background-color: white;
+    padding: 0% 1rem;
+    width: 40rem;
+    max-width: 50rem;
+    min-width: 10rem;
+}
+
+.ticketform-maincontainer h1 {
+    margin: 0;
+}
+
+.submitticket {
+    display: flex;
+    align-items: center;
+    background-color: var(--orange-color);
+    color: white;
+    margin-bottom: 20px;
+    padding: 2px 5px;
+}
+
+.ticketsubjectfieldset {
+    color: gray;
+}
+
+.ticketform fieldset {
+    border-color: gray;
+}
+
+.ticketform-maincontainer hr {
+    margin: 0;
+    padding: 0;
+}
+
+.ticketform-maincontainer legend {
+    margin-left: 10px;
+}
+
+.priorityfieldset {
+    max-width: 30rem;
+    color: gray;
+}
+
+.priorityfieldset select {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ticketfieldset {
+    max-width: 30rem;
+    color: gray;
+
+}
+
+.ticketfieldset select {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filefieldset {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.ticketform fieldset {
+    margin-top: 20px;
+    ;
+}
+
+.ticketform button {
+    margin-top: 20px;
+}
+
+.ticketinput {
+    width: 100%;
+}
+
+/* UTILITIES */
+
+.input-borderradius {
+    border-radius: 5px;
+}
+
+.input-widthlong {
+    max-width: 100%;
+}
+
+.input-widthshort {
+    max-width: 30rem;
+}
+
+.input-heightstandard {
+    max-height: 4vh;
+}
+
+.input-nooutline {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

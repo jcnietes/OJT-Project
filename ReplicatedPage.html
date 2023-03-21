@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="middle.css">
   <link rel="stylesheet" href="lowermid.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="ticketform.css">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, intitial-scale=1">
@@ -35,12 +36,20 @@
       </div>
       <nav class="navMenu">
         <ul>
-          <li>
+          <li class="openticketlist">
             <a href="#">
               <span class="material-symbols-outlined">
                 local_activity
               </span>
               Open Ticket
+            </a>
+          </li>
+          <li class="loginlist">
+            <a href="#">
+              <span class="material-symbols-outlined">
+                login
+              </span>
+              Login
             </a>
           </li>
         </ul>
@@ -419,6 +428,49 @@
         </div>
       </div>
     </section>
+
+    <section class="ticketform">
+      <div class="ticketform-maincontainer">
+        <h1>New Ticket</h1>
+        <!-- ADD A REMOVE BUTTON -->
+        <hr>
+        <fieldset class="ticketsubjectfieldset input-borderradius ">
+          <legend>Ticket Subject*</legend>
+          <input type="text" class="ticketinput input-heightstandard input-nooutline">
+        </fieldset>
+
+        <fieldset class="priorityfieldset  input-borderradius">
+          <legend>Priority*</legend>
+          <select class="priorityselect input-heightstandard input-nooutline">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="ticketfieldset  input-borderradius">
+          <legend>Ticket Category*</legend>
+          <select class="priorityselect input-heightstandard input-nooutline">
+            <option value="userissue">User Issue</option>
+            <option value="passissue">Password Issue</option>
+            <option value="techissue">Technical issue</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="filefieldset input-borderradius">
+          <input type="file" class="myfile">
+          <h6>Max file is 2MB</h6>
+        </fieldset>
+
+        <button type="submit" class="submitticket">
+          <span class="material-symbols-outlined">
+            send
+          </span>
+          Submit Button
+        </button>
+      </div>
+    </section>
+
   </div>
   <script src="javascript.js"></script>
 </body>
