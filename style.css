@@ -65,7 +65,6 @@ body {
 }
 
 .hamburger {
-
   float: right;
   height: 24px;
   cursor: pointer;
@@ -75,12 +74,19 @@ body {
   width: 30px;
   height: 3px;
   margin-top: 5px;
-  background-color: red;
+  background-color: var(--orange-color);
 }
 
 .ticketform {
   display: none;
 }
+
+.ticket-textalign {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1280px) {
@@ -93,6 +99,29 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
   }
+
+  .hamburger1 {
+    float: right;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .hamburger1 .line {
+    width: 30px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: var(--orange-color);
+  }
+
+  .hamburger1 .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger1 .line:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
 }
 
 @media only screen and (max-width: 969px) {
@@ -171,6 +200,10 @@ body {
   .navMenu ul {
     display: flex;
     flex-direction: column;
+  }
+
+  .hamburger1.active {
+    display: none;
   }
 }
 

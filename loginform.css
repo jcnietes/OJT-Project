@@ -1,0 +1,82 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(42deg 53.57% 78.04%);
+}
+
+.login-container {
+  background-color: green;
+  max-width: 60rem;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-image img {
+  height: 30rem;
+}
+
+.login-form-container {
+  background: white;
+  max-width: 40rem;
+  width: 40rem;
+}
+
+.login-form {
+  background-color: white;
+  height: 29rem;
+  padding: 20px;
+}
+
+.login-form input {
+  height: 4rem;
+  width: 100%;
+  border: none;
+  background-color: hsl(0, 0%, 90%);
+  padding: 0px 10px;
+  outline: none;
+  border-bottom: 2px solid gray;
+}
+
+#textpassword {
+  margin-top: 25px;
+}
+
+.loginbutton {
+  width: 100%;
+  margin-top: 10px;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+
+.login-form h5 {
+  margin-top: 15px;
+  color: gray;
+}
+
+.login-form h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: gray;
+}
+
+.loginbutton:active {
+  background-color: orange;
+}

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="ticketform.css">
 
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, intitial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,8 +45,16 @@
               Open Ticket
             </a>
           </li>
-          <li class="loginlist">
+          <li class="calculator">
             <a href="#">
+              <span class="material-symbols-outlined">
+                calculate
+              </span>
+              Calculator
+            </a>
+          </li>
+          <li class="loginlist">
+            <a href="LoginPage.html">
               <span class="material-symbols-outlined">
                 login
               </span>
@@ -431,7 +440,12 @@
 
     <section class="ticketform">
       <div class="ticketform-maincontainer">
-        <h1>New Ticket</h1>
+        <h1>New Ticket
+          <div class="hamburger1">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </h1>
         <!-- ADD A REMOVE BUTTON -->
         <hr>
         <fieldset class="ticketsubjectfieldset input-borderradius ">
@@ -470,7 +484,6 @@
         </button>
       </div>
     </section>
-
   </div>
   <script src="javascript.js"></script>
 </body>
