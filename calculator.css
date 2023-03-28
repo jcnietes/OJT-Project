@@ -47,12 +47,14 @@ body {
     word-break: break-all;
 }
 
-.current-operand {
+.current-display {
     color: orange;
     font-size: 30px;
+    width: 190px;
 }
 
-.previous-operand {
+.previous-display {
     color: black;
     font-size: 24px;
+    width: 190px;
 }
