@@ -12,27 +12,28 @@
 <body>
     <div class="calculatorGrid">
         <div class="output">
-            <input type="text" id="previous-display" value="" disabled />
-            <input type="text" id="current-display" value="0" disabled />
+            <input type="text" id="previous-display" disabled />
+            <input type="text" id="operator-display" disabled />
+            <input type="text" id="current-display" placeholder="0" disabled />
         </div>
-        <button class="span-two" onclick="allClear()">AC</button>
-        <button onclick="deleteSingleDigit()">DEL</button>
-        <button onclick="calculate('/')">÷</button>
-        <button onclick="addNumber(1)">1</button>
-        <button onclick="addNumber(2)">2</button>
-        <button onclick="addNumber(3)">3</button>
-        <button onclick="calculate('*')">*</button>
-        <button onclick="addNumber(4)">4</button>
-        <button onclick="addNumber(5)">5</button>
-        <button onclick="addNumber(6)">6</button>
-        <button onclick="calculate('+')">+</button>
-        <button onclick="addNumber(7)">7</button>
-        <button onclick="addNumber(8)">8</button>
-        <button onclick="addNumber(9)">9</button>
-        <button onclick="calculate('-')">-</button>
-        <button onclick="addDecimal()">.</button>
-        <button onclick="addNumber(0)">0</button>
-        <button class="span-two" onclick="equals()">=</button>
+        <button id="allClear" value="Clear" class="span-two">AC</button>
+        <button id="delete" value="Del">DEL</button>
+        <button class="operator" value="/">/</button>
+        <button class="number" value="1">1</button>
+        <button class="number" value="2">2</button>
+        <button class="number" value="3">3</button>
+        <button class="operator" value="*">*</button>
+        <button class="number" value="4">4</button>
+        <button class="number" value="5">5</button>
+        <button class="number" value="6">6</button>
+        <button class="operator" value="+">+</button>
+        <button class="number" value="7">7</button>
+        <button class="number" value="8">8</button>
+        <button class="number" value="9">9</button>
+        <button class="operator" value="-">-</button>
+        <button class="number" value=".">.</button>
+        <button class="number" value="0">0</button>
+        <button id="equals" value="=" class="span-two">=</button>
     </div>
 </body>
 
