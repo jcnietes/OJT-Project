@@ -72,28 +72,50 @@
 //     document.getElementById("previous-display").value = "";
 // }
 
+
+// function deleteSingleDigit() {
+//     result.value = result.value.slice(0, -1);
+// }
+
+// function allClear() {
+//     result.value = "0";
+//     operator = "";
+//     result.disabled = true;
+//     document.getElementById("previous-display").value = "";
+// }
+
 const prevDisplay = document.getElementById("previous-display");
 const operatorDisplay = document.getElementById("operator-display");
 const currDisplay = document.getElementById("current-display");
+const expressionDisplay = document.getElementById("expression-display");
+
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
-const clear = document.getElementById("clear");
+
 const equals = document.getElementById("equals");
+
+const allClear = document.getElementById("allClear");
 const deleter = document.getElementById("delete");
 
 let prevNum = "";
 let operator = "";
 let currNum = "0";
+
+let expression = "";
 let result = "";
+
 
 numbers.forEach((numberBtn) => {
     numberBtn.addEventListener("click", () => {
         if (currNum === "0") {
-            currNum = numberBtn.value
+            currNum = numberBtn.value;
         } else {
             currNum = currNum + numberBtn.value;
         }
         currDisplay.value = currNum;
+        expression = expression + numberBtn.value;
+        // expressionDisplay.value = expression;
+
     });
 });
 
@@ -103,13 +125,14 @@ operators.forEach((operatorBtn) => {
             prevNum = currNum;
         } else {
             prevNum = calculate(prevNum, currNum, operator);
-            currDisplay.value = prevNum;
+            // currDisplay.value = prevNum;
         }
         currNum = "0";
-        operator = operatorBtn.value;
-        operatorDisplay.value = operator
         prevDisplay.value = prevNum;
-        currDisplay.value = "0";
+        operator = operatorBtn.value;
+        operatorDisplay.value = operator;
+        expression = expression + " " + operator + " ";
+        expressionDisplay.value = expression;
     });
 });
 
@@ -122,8 +145,20 @@ equals.addEventListener("click", () => {
         operator = "";
         operatorDisplay.value = operator;
         prevDisplay.value = prevNum;
+        // expression = expression + " = " + result; 
+        expression = expression + " = ";
+        expressionDisplay.value = expression;
+        // clean()
     }
 });
+
+// HELPER FUNCTION
+function clean() {
+    expression = "";
+    expressionDisplay.value = "";
+    currNum = "";
+
+}
 
 function calculate(num1, num2, operator) {
     num1 = parseFloat(num1);
@@ -140,13 +175,21 @@ function calculate(num1, num2, operator) {
     }
 }
 
-// function deleteSingleDigit() {
-//     result.value = result.value.slice(0, -1);
-// }
+allClear.addEventListener("click", () => {
+    prevNum = "";
+    prevDisplay.value = prevNum;
+    currNum = "0";
+    currDisplay.value = currNum;
+    operator = "";
+    operatorDisplay.value = operator;
+    expression = "";
+    expressionDisplay.value = expression;
+});
 
-// function allClear() {
-//     result.value = "0";
-//     operator = "";
-//     result.disabled = true;
-//     document.getElementById("previous-display").value = "";
-// }
+deleter.addEventListener("click", () => {
+    currNum = currDisplay.value;
+    currNum = currNum.slice(0, -1);
+    currDisplay.value = currNum;
+    // expression = expression.slice(0, -2); 
+    // expressionDisplay.value = expression; 
+});
