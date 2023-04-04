@@ -84,6 +84,8 @@
 //     document.getElementById("previous-display").value = "";
 // }
 
+// qu
+
 const prevDisplay = document.getElementById("previous-display");
 const operatorDisplay = document.getElementById("operator-display");
 const currDisplay = document.getElementById("current-display");
@@ -115,7 +117,6 @@ numbers.forEach((numberBtn) => {
         currDisplay.value = currNum;
         expression = expression + numberBtn.value;
         // expressionDisplay.value = expression;
-
     });
 });
 
@@ -150,15 +151,23 @@ equals.addEventListener("click", () => {
         expressionDisplay.value = expression;
         // clean()
     }
-});
-
-// HELPER FUNCTION
-function clean() {
     expression = "";
     expressionDisplay.value = "";
     currNum = "";
+});
 
-}
+// angular basics
+// jrex
+// api basics
+// calculator replicate into angular (heras)
+
+// HELPER FUNCTION
+// function clean() {
+//     expression = "";
+//     expressionDisplay.value = "";
+//     currNum = "";
+
+// }
 
 function calculate(num1, num2, operator) {
     num1 = parseFloat(num1);
@@ -190,6 +199,4 @@ deleter.addEventListener("click", () => {
     currNum = currDisplay.value;
     currNum = currNum.slice(0, -1);
     currDisplay.value = currNum;
-    // expression = expression.slice(0, -2); 
-    // expressionDisplay.value = expression; 
 });
